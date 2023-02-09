@@ -1,0 +1,11 @@
+oc_item_name ='I_SOMETHING'
+is_decimal = True
+ls_item_value = '10,6'
+if (is_decimal):
+    try:
+        float(ls_item_value)
+        _this_value = str(ls_item_value)
+    except:
+        _this_value = 'CONVERSION-ERROR %s value %s to float' % (oc_item_name, ls_item_value)
+    print('dec.: ',_this_value)
+    
